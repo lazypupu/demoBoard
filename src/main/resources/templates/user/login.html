@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div th:insert="userCommon/header.html" id="header"></div>
+    <form action="/login-user" method="post">
+        ID : <input type="text" name="id"> <br>
+        UserName : <input type="text" name="username"> <br>
+        Password : <input type="text" name="password"> <br>
+        email : <input type="text" name="email"> <br>
+        role : <input type="text" name="role"> <br>
+
+        <input type="submit" value="등록">
+    </form>
+    <div th:insert="userCommon/footer.html" id="footer"></div>
+</body>
+</html>
